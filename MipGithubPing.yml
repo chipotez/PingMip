@@ -18,3 +18,6 @@
   - name: Mostrar mensaje
     debug:
       msg: "Este es un playbook de prueba desde Github"
+  - name: Hello Message
+    debug:
+      msg: "Hello World! - POST CONSFIGURACIÓN"
