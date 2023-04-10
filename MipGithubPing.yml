@@ -15,3 +15,6 @@
   - name: Mostrar contenido del archivo hosts
     debug:
       var: contenido_hosts.content | b64decode
+  - name: Mostrar mensaje
+    debug:
+      msg: "Este es un playbook de prueba desde Github"
