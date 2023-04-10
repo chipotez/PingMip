@@ -1,0 +1,17 @@
+---
+- name: Validar conexión Ansible-cliente
+  hosts: all
+  gather_facts: false
+
+  tasks:
+  - name: Ping
+    ping:
+
+  - name: Leer archivo hosts
+    slurp:
+      path: /etc/hosts
+    register: contenido_hosts
+
+  - name: Mostrar contenido del archivo hosts
+    debug:
+      var: contenido_hosts.content | b64decode
