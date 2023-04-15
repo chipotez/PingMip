@@ -20,3 +20,7 @@
   - name: Hello Message
     debug:
       msg: "Hello World! - POST CONSFIGURACIÓN"
+  - name: install the latest version of Apache
+    dnf:
+      name: httpd
+      state: latest
