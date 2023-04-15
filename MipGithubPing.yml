@@ -2,8 +2,6 @@
 - name: Validar conexión Ansible-cliente
   hosts: all
   gather_facts: false
-  collections:
-    - community.general
   tasks:
   
   - name: Ping
@@ -22,11 +20,3 @@
   - name: Hello Message
     debug:
       msg: "Hello World! - POST CONSFIGURACIÓN"
-  - name: Send a text message to a mobile phone through Twilio
-    community.general.twilio:
-      msg: All servers with webserver role are now configured.
-      account_sid: AC12b44c9bb6956255ffa8e64589122888
-      auth_token: 09c207e7786411467449660ca569a728
-      from_number: +16205428906
-      to_number: +5215518404672
-    delegate_to: localhost
