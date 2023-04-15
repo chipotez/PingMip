@@ -24,3 +24,7 @@
     dnf:
       name: httpd
       state: latest
+  - firewalld:
+      service: http
+      permanent: yes
+      state: enabled
