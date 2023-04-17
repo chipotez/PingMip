@@ -16,6 +16,6 @@
         api_args:
           chat_id: -602288015
           parse_mode: "markdown"
-          text: "Ping to host {{ inventory_hostname }} successful c"
+          text: "Ping to host {{ inventory_hostname }} successful"
           disable_web_page_preview: true
           disable_notification: true
