@@ -1,0 +1,7 @@
+---
+- name: Validar conexión Ansible-cliente
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Ping
+    ping:
