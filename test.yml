@@ -4,4 +4,8 @@
   gather_facts: false
   tasks:
     - name: Ping
-    ping:
+      ping:
+    - name: Mostrar mensaje en pantalla
+      message:
+        msg: "Este es un mensaje de ejemplo enviado desde Ansible."
+        echo: yes
