@@ -8,4 +8,4 @@
     - name: Mostrar mensaje en pantalla
       debug:
         msg: "Este es un mensaje de ejemplo enviado desde Ansible."
-        echo: yes
+        verbosity: 2
