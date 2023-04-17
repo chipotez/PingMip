@@ -10,8 +10,7 @@
         msg: "Este es un mensaje de ejemplo enviado desde Ansible."
         verbosity: 2 
     - name: Send notify to Telegram
-      #community.general.telegram:
-      telegram:
+      community.general.telegram:
         token: '5932614782:AAEA21lWegXVjZz6E0te3IhNU9pPE7desxU'
         api_args:
           chat_id: -602288015
