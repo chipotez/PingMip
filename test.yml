@@ -3,7 +3,7 @@
   hosts: all
   gather_facts: false
   collections:
-    - community.general
+    - /root/.ansible/collections/ansible_collections
   tasks:
     - name: Ping
       ping:
