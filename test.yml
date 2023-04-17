@@ -3,9 +3,10 @@
   hosts: all
   gather_facts: false
   collections:
-    - /root/.ansible/collections/ansible_collections
-    - /usr/share/ansible/collections/ansible_collections
-    - community.general
+#    - /root/.ansible/collections/ansible_collections
+#    - /usr/share/ansible/collections/ansible_collections
+#    - community.general
+     - /usr/share/ansible/plugins/modules/
   tasks:
     - name: Ping
       ping:
