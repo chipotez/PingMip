@@ -4,6 +4,7 @@
   gather_facts: false
   collections:
     - /root/.ansible/collections/ansible_collections
+    - /usr/share/ansible/collections/ansible_collections
   tasks:
     - name: Ping
       ping:
