@@ -5,6 +5,7 @@
   collections:
     - /root/.ansible/collections/ansible_collections
     - /usr/share/ansible/collections/ansible_collections
+    - community.general
   tasks:
     - name: Ping
       ping:
